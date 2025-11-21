@@ -14,6 +14,22 @@ public class PlayerMove2 : MonoBehaviour
 
     public bool moving;
 
+    public static PlayerMove2 instance {get; private set;}
+
+    void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else 
+        {
+            Destroy(gameObject);
+        }
+
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -93,5 +109,12 @@ public class PlayerMove2 : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
       
+    }
+
+
+    public void Cooked()
+    {
+
+        Speed = 1;
     }
 }
