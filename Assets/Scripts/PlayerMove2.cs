@@ -96,6 +96,7 @@ public class PlayerMove2 : MonoBehaviour
     public void OnCollisionExit2D(Collision2D other)
     {
         Floored = false;
+        moving = true;
     }
 
     public void OnCollisionStay2D(Collision2D other)
