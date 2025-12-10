@@ -5,6 +5,8 @@ public class DecPlatform : MonoBehaviour
     public float Countdown = 5;
     public float cooldown = 5;
     public bool decay;
+    public float Alpha = 1;
+    public SpriteRenderer SR;
 
     public BoxCollider2D box;
 
@@ -14,7 +16,8 @@ public class DecPlatform : MonoBehaviour
         if (decay)
         {
             Countdown -= Time.deltaTime;
-            
+            SR.color = new Color(0.6f,0.4f,0.2f,Alpha);
+            Alpha -= (0.2f*Time.deltaTime);
         }
         if (Countdown <= 0)
         {
@@ -28,6 +31,8 @@ public class DecPlatform : MonoBehaviour
             box.enabled = true;
             Countdown = 5;
             cooldown = 5;
+            SR.color = new Color(0.6f,0.4f,0.2f,1);
+            Alpha = 1;
         } 
     }
 
