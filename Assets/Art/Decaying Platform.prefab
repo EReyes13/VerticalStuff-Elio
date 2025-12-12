@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1059062650866969913}
   m_Layer: 0
   m_Name: Decaying Platform
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5943396, g: 0.41597638, b: 0.21586862, a: 1}
+  m_Color: {r: 0.5943396, g: 0.41597638, b: 0.21586862, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   cooldown: 5
   decay: 0
   Alpha: 1
-  SR: {fileID: 0}
+  SR: {fileID: 5226360040721441939}
   box: {fileID: 6081819837901754499}
 --- !u!1 &8791432178312939767
 GameObject:
