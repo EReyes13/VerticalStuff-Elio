@@ -95,7 +95,7 @@ public class TextScript : MonoBehaviour
                 break;
             
             case 4:
-            EffectText.text = "Checkpoint Reached! Press E to respawn here upon interacting with an elevator.";
+            EffectText.text = "Checkpoint Reached! Press C to respawn here upon interacting with an elevator.";
             break;
             case 5:
             EffectText.text = "Inverted Controls! Ur cooked twin.";

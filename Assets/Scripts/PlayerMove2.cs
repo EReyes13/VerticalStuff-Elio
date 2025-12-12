@@ -107,6 +107,10 @@ public class PlayerMove2 : MonoBehaviour
              {
                 ElevatorScript.instance.Checkpoint = gameObject.transform.position;
                 }
+                if(ElevatorPoints.instance != null)
+                {
+                    ElevatorPoints.instance.Check = gameObject.transform.position;
+                }
              Checkpointed = false;
             }
                 if(Tweaking)
@@ -244,7 +248,7 @@ public class PlayerMove2 : MonoBehaviour
             TextScript.instance.ShowEffect();
         }
         TweakID = 2;
-        Speed -= 5*Mult;
+        JumpPower -= 5*Mult;
         Debug.Log("Crippled");
     }
     public void Slow()

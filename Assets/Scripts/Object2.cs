@@ -23,6 +23,7 @@ public class Object2 : MonoBehaviour
           if(TimeScript.instance != null)
             {
                 TimeScript.instance.noeffect = false;
+                TimeScript.instance.Clock = 0;
             }
            Destroy(gameObject);
         }
